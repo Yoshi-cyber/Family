@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="https://images-na.ssl-images-amazon.com/images/I/51hhFOpOE%2BL._SY445_SX342_QL70_ML2_.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father ",
+   "3. My Mother ",
+   "4. My Sister ",
+   "5. Me "
+   ];
+ var images=[
+   "https://image.pngaaa.com/819/3193819-middle.png",
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyJC8POLxa0YgVPxGHsUOjyaN-ukArKKH0w&usqp=CAU",
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADADIoRFGyUEZaXfhEXquHlgTKukxU3MVnia3Z9Kf-xLmR4wVmEVoaSmo0MKC1_Qyca8&usqp=CAU",
+   "https://artprojectsforkids.org/wp-content/uploads/2021/01/Draw-a-Boy.jpeg"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
